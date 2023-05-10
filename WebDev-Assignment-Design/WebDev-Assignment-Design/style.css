@@ -1,0 +1,36 @@
+/* sample spreadshet - you should replace all of this! */
+body {
+    margin: 100px;
+}
+
+header {
+    border: 3px solid darkorange;
+    padding: 25px 50px 75px;
+    width: 100%;
+    background-color: #ffa483;
+    
+}
+
+#heading {
+    background-color: gainsboro;
+}
+
+#whatis {
+    width: 300px;
+    background-color: forestgreen;
+    border: 10px solid orchid;
+}
+
+#registration {
+    width: 30%;
+    margin: auto;
+    background-color: rosybrown;
+}
+
+footer {
+    background-color: yellow;
+}
+
+img {
+    width: 300px;
+}
