@@ -1,18 +1,89 @@
 /* sample spreadshet - you should replace all of this! */
+
+/*
+Colour palette 
+Use these three base colours:
+#054D5A
+#007173
+#05A2A5
+
+Use this colour to highlight important stuff (e.g. the page youre on, signup section)
+#702116
+
+
+
+#F4B09B
+
+
+*/
+
+
 body {
-    margin: 100px;
+    margin: 50px;
 }
 
+
 header {
-    border: 3px solid darkorange;
-    padding: 25px 50px 75px;
-    width: 100%;
-    background-color: #ffa483;
+    /* */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%; 
     
 }
 
+nav ul{
+    list-style-type: none;
+    margin: 20px;
+    padding: 20px;
+    overflow: hidden;
+    background-color: #054D5A;
+}
+
+nav ul li a{
+    float: left;
+}
+
+nav ul li a:hover:not(.active) {
+    background-color: #05A2A5;
+}.active {
+    background-color: #c48e29;
+  }
+
+/*Can't change html code, so can't add logo img
+#logo {
+    
+}
+
+nav.ul{
+    
+}
+*/
+
+
+#search-form {
+
+}
+
+/*
+#content{
+}
+*/
+
 #heading {
     background-color: gainsboro;
+}
+
+#most-popular-first {
+    list-style-type: none;
+}
+
+#most-popular-second {
+    list-style-type: none;
+}
+
+#most-popular-third {
+    list-style-type: none;
 }
 
 #whatis {
@@ -22,15 +93,42 @@ header {
 }
 
 #registration {
+    text-align: center;
     width: 30%;
     margin: auto;
     background-color: rosybrown;
 }
 
+
+#registration-form {
+
+}
+
+#recent-users{
+
+}
+
+
+
 footer {
     background-color: yellow;
+}
+
+#social{
+
+}
+
+#footer-tos{
+
 }
 
 img {
     width: 300px;
 }
+
+#whatis {
+    padding: 30px;
+    margin: 10px;
+}
+
+
