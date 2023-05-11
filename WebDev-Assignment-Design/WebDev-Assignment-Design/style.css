@@ -28,7 +28,6 @@ header {
     margin: 0;
     padding: 0;
     width: 100%; 
-    
 }
 
 /*Nav bar*/
@@ -49,7 +48,6 @@ nav ul li a{
     padding: 15px 18px;
     text-decoration: wavy;
 }
-
 nav ul li a:hover:not(.active) {
     background-color: #054D5A;
 }
@@ -63,27 +61,43 @@ nav ul li a:hover:is(.active) {
 */
 
 
-/*TODO: FIX SEARCH FORM*/
-#search-form {
-    float:right;
-    color: white;
-    background-color: #054D5A;
+/*The entire search section*/
+#search-form { 
+    text-align: left; /*position of the "Search:" + search box + go button*/
+}
+div.form-input { 
+    display: inline-block;
+    /*The word 'Search'*/
+    color: white; 
+    font-size: 20px;
+}
+/*The actual search bar where you input stuff*/
+#search-input{
+    display: inline-block;
+    color: white;  /*Colour of the words typed, can't see it otherwise*/
+    background-color: #054D5A; 
     min-width: 200px;
     max-width: 30%;
 }
-
-/*TODO: FIX BUTTONS*/
-
+/*The GO button*/
 #search-button{
-    background-color: #b15144;
+    display: inline-block;
+    background-color: #05A2A5;
     border: 2px solid black;
-    color: white;
+    border-radius: 12px;
     padding: 8px 12px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 18px;
+    transition-duration: 0.4s; /*Gives cool transition effect*/
+    
+}#search-button:hover{
+    background-color: #b15144;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); /*shadow effect*/
 }
+
+
 
 /*
 #content{
@@ -94,15 +108,28 @@ nav ul li a:hover:is(.active) {
 
 }
 
+/*TODO: FIX LIKE BUTTONS*/
 button.like-button {
-    background-color: #b15144;
-    border: none;
+    background-color: #b06c62;
     color: white;
+    border: none;
     padding: 10px 12px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
+    transition-duration: 0.4s; /*fade in effect*/
+}button.like-button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); /*shadow effect*/
+    border: 1px solid black;
+    background-color: #af4334;
+    color: white;
+}button.like-button:focus{ /*after being clicked, stay at darker colour*/
+    background-color: #af4334;
+    color: white;
+    /*Need to change Like -> Liked, and +1 to like counter*/
+}button.like-button:visited{ /**/
+    background-color: #b06c62;
 }
 
 /* 
@@ -129,12 +156,11 @@ TODO: APPLY GRID LAYOUT HERE!!!
 
     background-color: #054D5A;
     color:white;
-
-    
-    /**/
 }
 
-#registration {
+
+/*Registration section*/
+#registration {/*the part where it says "Sign up!"*/
     float:inline-start;
     text-align: center;
     min-width: 260px;
@@ -145,8 +171,6 @@ TODO: APPLY GRID LAYOUT HERE!!!
     background-color: #b15144;
     color:white;
 }
-
-
 #registration-form {
 
 }
