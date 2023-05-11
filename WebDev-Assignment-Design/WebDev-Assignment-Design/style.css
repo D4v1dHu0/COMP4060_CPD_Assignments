@@ -3,6 +3,8 @@
 /*
 Colour palette 
 Use these three base colours:
+(darkest to lightest)
+
 #054D5A
 #007173
 #05A2A5
@@ -10,13 +12,9 @@ Use these three base colours:
 Use this colour to highlight important stuff (e.g. the page youre on, signup section)
 #702116
 
-
-
+For some contrast and off-cases
 #F4B09B
-
-
 */
-
 
 body {
     margin: 50px;
@@ -24,7 +22,7 @@ body {
 
 
 header {
-    /* */
+    /*Everything above "welcome to flowtow"*/
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -32,22 +30,30 @@ header {
     
 }
 
-nav ul{
+/*Nav bar*/
+nav ul{ 
     list-style-type: none;
-    margin: 20px;
-    padding: 20px;
+    margin: 12px;
+    padding: 15px;
     overflow: hidden;
-    background-color: #054D5A;
+    background-color: #007173;
 }
 
-nav ul li a{
+/*Nav bar items*/
+nav ul li a{ 
+    display: block;
+    color: white;
+    text-align: center;
     float: left;
+    padding: 15px 18px;
+    text-decoration: wavy;
 }
 
 nav ul li a:hover:not(.active) {
-    background-color: #05A2A5;
-}.active {
-    background-color: #c48e29;
+    background-color: #054D5A;
+}
+nav ul li a:hover:is(.active) {
+    background-color: #702116;
   }
 
 /*Can't change html code, so can't add logo img
@@ -71,7 +77,11 @@ nav.ul{
 */
 
 #heading {
-    background-color: gainsboro;
+    background-color: #05A2A5;
+}
+
+button.like-button {
+
 }
 
 #most-popular-first {
@@ -87,16 +97,24 @@ nav.ul{
 }
 
 #whatis {
-    width: 300px;
-    background-color: forestgreen;
-    border: 10px solid orchid;
+    float:left;
+    width: 27%;
+    height: 14.9999%;
+    margin: 10%;
+    padding: auto;
+    background-color: #F4B09B;
+    /**/
 }
 
 #registration {
+    float:inline-start;
     text-align: center;
-    width: 30%;
+    min-width: 260px;
+    max-width: 800px;
+    height: 300px;
     margin: auto;
-    background-color: rosybrown;
+    padding: 20px;
+    background-color: #b15144;
 }
 
 
